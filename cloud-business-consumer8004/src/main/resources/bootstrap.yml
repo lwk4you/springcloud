@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: cloud-business-service
+  cloud:
+    nacos:
+      config:
+        server-addr: nacos.lwk4you.com
+        namespace: lwk-dev
+        file-extension: yaml
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
