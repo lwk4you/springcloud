@@ -15,7 +15,12 @@ spring:
     url: jdbc:mysql://106.53.64.109:3306/spring_cloud?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
     username: root
     password: lwk123456
-
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000  # 指定Feign客户端连接提供者的超时时限   取决于网络环境
+        readTimeout: 5000
 
 mybatis-plus:
   global-config:

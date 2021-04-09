@@ -17,15 +17,5 @@ spring:
     url: jdbc:mysql://106.53.64.109:3306/spring_cloud?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
     username: root
     password: lwk123456
-    initialSize: 5
-    minIdle: 5
-    maxActive: 20
-    maxWait: 60000
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 300000
-    validationQuery: SELECT1FROMDUAL
-    testWhileIdle: true
-    testOnBorrow: false
-    testOnReturn: false
-    filters: stat,wall,log4j
-    logSlowSql: true
+seata:
+  use-jdk-proxy: true
